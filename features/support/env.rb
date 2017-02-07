@@ -9,7 +9,7 @@ ENV['SAUCE_ACCESS_KEY'] = 'ace7b619-cddd-484c-a535-8fad4de50a84'
   
   
 if ENV['TEST_ENV']=='dev'
-  capybara.app_host='https://dev-web.core.merrillcorp.com/'
+  Capybara.app_host='https://dev-web.core.merrillcorp.com/'
 elsif ENV['TEST_ENV'] == 'stage'
     Capybara.app_host='https://stage-web.core.merrillcorp.com/'
 elsif ENV['TEST_ENV'] == 'prod'
